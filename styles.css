@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: maroon;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background: red;
+    text-align: center;
+    font-size: 100px;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navigation a.active {
+    background-color: burlywood;
+    color: white;
+}
+
+.navigation a:last-of-type {
+    align-items: right;
+}
