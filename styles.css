@@ -18,6 +18,7 @@ header {
 .navigation {
     overflow: hidden;
     background-color: #333;
+    display: flex;
 }
 
 .navigation a {
@@ -39,6 +40,6 @@ header {
     color: white;
 }
 
-.navigation a:last-of-type {
-    align-items: right;
+.spacer {
+    width: 100%;
 }
