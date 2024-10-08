@@ -1,53 +1,109 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: rgb(101, 152, 91);
+  background: rgb(101, 152, 91);
 }
 
 .header_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    min-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 8vh;
 }
 
 .header-left {
-    position: absolute;
-    left: 0;
-    margin: 20px;
+  position: absolute;
+  left: 0;
+  margin: 20px;
 }
 
 .option {
-    padding: 10px;
-    color: black;
-    text-decoration: none;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.option:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the active link */
+.active {
+  font-weight: bold;
 }
 
 .header-mid {
-    display: flex;
+  display: flex;
 }
 
 header {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .header_logo {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .logo {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .header-right {
-    position: absolute;
-    right: 0;
-    margin: 20px;
+  position: absolute;
+  right: 0;
+  margin: 20px;
+}
+
+/* Hides the dropdown menu initially */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show dropdown when the toggle button is clicked */
+.show {
+  display: block;
+}
+
+/* Hide the dropdown toggle and show normal navbar for larger screens */
+.dropdown {
+  display: none;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  margin: 20px;
+}
+
+/* Media query for screens less than or equal to 768px */
+@media (max-width: 768px) {
+  .header-left .navbar,
+  .header-right .navbar {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .dropdown-menu .option {
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
 }
