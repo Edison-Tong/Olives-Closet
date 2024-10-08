@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    background: grey;
+    background: rgb(101, 152, 91);
 }
 
 .header_main {
@@ -13,6 +14,15 @@ body {
     align-items: center;
     background: white;
     min-height: 8vh;
+}
+
+.header-left {
+    position: relative;
+    left: 0%;
+}
+
+.header-mid {
+    display: flex;
 }
 
 header {
