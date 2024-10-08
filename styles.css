@@ -4,42 +4,27 @@
 }
 
 body {
-    background: maroon;
+    background: grey;
+}
+
+.header_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    min-height: 8vh;
 }
 
 header {
-    height: 100px;
-    width: 100%;
-    background: red;
-    text-align: center;
-    font-size: 100px;
+    font-size: 40px;
 }
 
-.navigation {
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
+.header_logo {
+    width: 50px;
+    height: 50px;
 }
 
-.navigation a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navigation a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.navigation a.active {
-    background-color: burlywood;
-    color: white;
-}
-
-.spacer {
-    width: 100%;
+.logo {
+    max-width: 100%;
+    max-height: 100%;
 }
