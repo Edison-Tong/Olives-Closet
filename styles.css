@@ -79,6 +79,8 @@ header {
 /* Hide the dropdown toggle and show normal navbar for larger screens */
 .dropdown {
   display: none;
+  position: absolute;
+  left: 0;
 }
 
 .dropdown-toggle {
