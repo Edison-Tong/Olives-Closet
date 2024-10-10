@@ -1,163 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Custom Order Form</title>
-    </head>
-    <body>
-        <div class="header_main">
-            <!-- Hamburger Icon for Mobile View -->
-            <div class="dropdown">
-                <button class="dropdown-toggle" id="menu-toggle">☰</button>
-                <div class="dropdown-menu" id="menu">
-                    <a class="option" href="index.html">Home</a>
-                    <a class="option" href="about.html">About</a>
-                    <a class="option" href="store.html">Store</a>
-                    <a class="option" href="contact.html">Contact</a>
-                    <a class="option" href="customOrderForm.html">Custom Order</a>
-                    <a class="option" href="cart.html">Cart</a>
-                </div>
-            </div>
-
-            <div class="header-left">
-                <div class="navbar">
-                    <a class="option" href="index.html">Home</a>
-                    <a class="option" href="about.html">About</a>
-                    <a class="option" href="store.html">Store</a>
-                </div>
-            </div>
-            <div class="header-mid">
-                <header>Olive's Closet</header>
-                <div class="header_logo">
-                    <img
-                        class="logo"
-                        src="images/olives-closet-logo.png"
-                        alt="Olive's Closet Logo"
-                    />
-                </div>
-            </div>
-            <div class="header-right">
-                <div class="navbar">
-                    <a class="option" href="customOrderForm.html">Custom Order</a>
-                    <a class="option" href="contact.html">Contact</a>
-                    <a class="option" href="cart.html">Cart</a>
-                </div>
-            </div>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Order Form</title>
+  </head>
+  <body>
+    <div class="header_main">
+      <!-- Hamburger Icon for Mobile View -->
+      <div class="dropdown">
+        <button class="dropdown-toggle" id="menu-toggle">☰</button>
+        <div class="dropdown-menu" id="menu">
+          <a class="option" href="index.html">Home</a>
+          <a class="option" href="about.html">About</a>
+          <a class="option" href="store.html">Store</a>
+          <a class="option" href="contact.html">Contact</a>
+          <a class="option" href="customOrderForm.html">Custom Order</a>
+          <a class="option" href="cart.html">Cart</a>
         </div>
-        <div>
-            <form action="">
-                <!-- <div class="question">
-                    <label for="item-type">Wadayawant?</label>
-                    <br>
-                    <select class="other" type="text" id="item-type" name="item-type">
-                        <option value="quilted-coat">Quilted Coat</option>
-                        <option value="quilted-vest">Quilted Vest</option>
-                        <option value="quilted-bag">Quilted Bag</option>
-                        <option value="knitted-hat">Knitted Hat</option>
-                        <option value="other">Other:</option>
-                    </select>
-                    <br>
-                    <input class="hidden" type="text">
-                </div> -->
+      </div>
 
-                <div class="question">
-                    <label for="item-type">Wadayawant?</label>
-                    <br>
-                    <input type="radio" id="quilted-coat" name="item-type" value="quilted-coat">
-                    <label for="quilted-coat">Quilted Coat</label><br>
-                    <input type="radio" id="quilted-vest" name="item-type" value="quilted-vest">
-                    <label for="quilted-vest">Quilted Vest</label><br>
-                    <input type="radio" id="quilted-bag" name="item-type" value="quilted-bag">
-                    <label for="quilted-bag">Quilted Bag</label><br>
-                    <input type="radio" id="knitted-hat" name="item-type" value="knitted-hat">
-                    <label for="knitted-hat">Knitted Hat</label><br>
-                    <input type="radio" id="other" name="item-type" value="other">
-                    <label for="other">Other</label>
-                    <input type="text">
-                </div>
-
-                <div class="question">
-
-                    <label for="material">Are you sending me your quilt?</label>
-                    <br>
-                    <select type="text" id="material" name="material">
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-
-                <!-- <div class="question">
-                    <label for="size">Who is this for?</label>
-                    <br>
-                    <select type="text" id="size" name="size" onchange="showTextBox(this)">
-                        <option value="adult">Adult</option>
-                        <option value="youth">Youth</option>
-                        <option value="baby">Baby</option>
-                        <option value="other">Other:</option>
-                    </select>
-                    <br>
-                    <input class="hidden" type="text">
-                </div> -->
-
-                <div class="question">
-                    <label for="size">Who is this for?</label><br>
-                    <input type="radio" id="adult" name="itemtype" value="adult">
-                    <label for="adult">Adult</label><br>
-                    <input type="radio" id="youth" name="itemtype" value="youth">
-                    <label for="youth">Youth</label><br>
-                    <input type="radio" id="baby" name="itemtype" value="baby">
-                    <label for="baby">Baby</label><br>
-                    <input type="radio" id="other" name="itemtype" value="other">
-                    <label for="other">Other</label>
-                    <input type="text">
-                </div>
-
-                <div class="question">
-                    <label for="description"
-                        >Please give a detailed description of you request
-                    </label>
-                    <br>
-                    <input type="text" placeholder="ie: winter jacket" />
-                </div>
-
-                <div class="question">
-                    <label for="customer-name">Your name</label>
-                    <br>
-                    <input type="text" placeholder="name" />
-                </div>
-
-                <div class="question">
-                    <label for="customer-phone">Phone number</label>
-                    <br>
-                    <input type="text" placeholder="Phone number" />
-                </div>
-
-                <div class="question">
-                    <label for="customer-email">E-mail</label>
-                    <br>
-                    <input type="text" placeholder="E-mail" />
-                </div>
-
-                <div class="question">
-                    <label for="contact method">Preferred contact method</label>
-                    <br>
-                    <input type="checkbox" >Phone</input>
-                    <br>
-                    <input type="checkbox" >E-mail</input>
-                </div>
-
-                <div class="question">
-                    <label for="additional-info">Questions and comments</label>
-                    <br>
-                    <input type="text" placeholder="additional info">
-                </div>
-                <div class="submit-btn">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+      <div class="header-left">
+        <div class="navbar">
+          <a class="option" href="index.html">Home</a>
+          <a class="option" href="about.html">About</a>
+          <a class="option" href="store.html">Store</a>
         </div>
-        <script src="app.js"></script>
-    </body>
+      </div>
+      <div class="header-mid">
+        <header>Olive's Closet</header>
+        <div class="header_logo">
+          <img class="logo" src="images/olives-closet-logo.png" alt="Olive's Closet Logo" />
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="navbar">
+          <a class="option" href="customOrderForm.html">Custom Order</a>
+          <a class="option" href="contact.html">Contact</a>
+          <a class="option" href="cart.html">Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <form action="">
+        <!-- Item type -->
+        <div class="question-container">
+          <div class="question">
+            <label for="item-type">Wadayawant?</label>
+            <br />
+            <input type="radio" id="quilted-coat" name="item-type" value="quilted-coat" />
+            <label for="quilted-coat">Quilted Coat</label>
+            <br />
+            <input type="radio" id="quilted-vest" name="item-type" value="quilted-vest" />
+            <label for="quilted-vest">Quilted Vest</label>
+            <br />
+            <input type="radio" id="quilted-bag" name="item-type" value="quilted-bag" />
+            <label for="quilted-bag">Quilted Bag</label>
+            <br />
+            <input type="radio" id="knitted-hat" name="item-type" value="knitted-hat" />
+            <label for="knitted-hat">Knitted Hat</label>
+            <br />
+            <input type="radio" id="other" name="item-type" value="other" />
+            <label for="other">Other</label>
+            <input type="text" id="other-item" placeholder="Please specify" />
+          </div>
+        </div>
+
+        <!-- Material -->
+        <div class="question-container">
+          <div class="question">
+            <label for="material">Are you sending me your quilt?</label>
+            <br />
+            <select id="material" name="material">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Size -->
+        <div class="question-container">
+          <div class="question">
+            <label for="size">Who is this for?</label>
+            <br />
+            <input type="radio" id="adult" name="size" value="adult" />
+            <label for="adult">Adult</label>
+            <br />
+            <input type="radio" id="youth" name="size" value="youth" />
+            <label for="youth">Youth</label>
+            <br />
+            <input type="radio" id="baby" name="size" value="baby" />
+            <label for="baby">Baby</label>
+            <br />
+            <input type="radio" id="other-size" name="size" value="other" />
+            <label for="other-size">Other</label>
+            <input type="text" id="other-size-input" placeholder="Please specify" />
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="question-container">
+          <div class="question">
+            <label for="description">Please give a detailed description of your request</label>
+            <br />
+            <input type="text" id="description" placeholder="e.g., winter jacket" />
+          </div>
+        </div>
+
+        <!-- Customer details -->
+        <div class="question-container">
+          <div class="question">
+            <label for="customer-name">Your name</label>
+            <br />
+            <input type="text" id="customer-name" placeholder="Name" />
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">
+            <label for="customer-phone">Phone number</label>
+            <br />
+            <input type="text" id="customer-phone" placeholder="Phone number" />
+          </div>
+        </div>
+
+        <div class="question-container">
+          <div class="question">
+            <label for="customer-email">E-mail</label>
+            <br />
+            <input type="email" id="customer-email" placeholder="E-mail" />
+          </div>
+        </div>
+
+        <!-- Contact preference -->
+        <div class="question-container">
+          <div class="question">
+            <label for="contact-method">Preferred contact method</label>
+            <br />
+            <input type="checkbox" id="contact-phone" name="contact-method" value="phone" />
+            <label for="contact-phone">Phone</label>
+            <br />
+            <input type="checkbox" id="contact-email" name="contact-method" value="email" />
+            <label for="contact-email">E-mail</label>
+          </div>
+        </div>
+
+        <!-- Additional info -->
+        <div class="question-container">
+          <div class="question">
+            <label for="additional-info">Questions and comments</label>
+            <br />
+            <textarea id="additional-info" placeholder="Additional info"></textarea>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="question-container">
+          <div class="submit-btn">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
